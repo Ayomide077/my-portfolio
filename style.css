@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container for Responsive Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header Section */
+header {
+    background: #007bff; /* Blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Skills Section */
+#skills {
+    background: #e4e4e4;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#skills ul {
+    list-style: none; /* Remove default bullets */
+    display: inline-block; /* Center the list */
+    text-align: left; /* Align text within the list */
+    padding: 0;
+}
+
+#skills li {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.project {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.project h3 {
+    margin: 0 0 5px;
+    color: #007bff;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Make header text smaller for mobile */
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Stack skills list vertically */
+    #skills ul {
+        display: block;
+    }
+
+    #skills li {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    /* Center projects on mobile */
+    .project {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Adjust footer text */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust for very small screens */
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header p, footer p {
+        font-size: 0.8rem;
+    }
+
+    .project h3 {
+        font-size: 1rem;
+    }
+}
+#contact {
+    margin: 40px 0;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contact button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
